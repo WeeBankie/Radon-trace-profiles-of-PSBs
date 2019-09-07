@@ -60,7 +60,7 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[Radon trace profiles of PSB galaxies]{MNRAS \LaTeXe\ template -- title goes here}
+\title[Radon trace profiles of PSB galaxies]{Radon transform trace profiles of PSB galaxy stellar velocity fields}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -99,73 +99,128 @@ A short document to present and discuss Radon trace profiles of stellar velocity
 keyword1 -- keyword2 -- keyword3
 \end{keywords}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
 
-This is a simple template for authors to write new MNRAS papers.
-See \texttt{mnras\_sample.tex} for a more complex example, and \texttt{mnras\_guide.tex}
-for a full user guide.
+All papers should start with an Introduction section, which sets the work in context, cites relevant studies in the field and describes the problem the authors aim to solve.
 
-All papers should start with an Introduction section, which sets the work
-in context, cites relevant earlier studies in the field by \citet{Others2013},
-and describes the problem the authors aim to solve \citep[e.g.][]{Author2012}.
-
-Testing citations in the bibliography file see e.g. \citet{2019ApJ...872...76N}.
-
-\section{Methods, Observations, Simulations etc.}
-
-Normally the next section describes the techniques the authors used.
+% Testing citations in the bibliography file see e.g. \citet{2019ApJ...872...76N}.
 
 \section{Radon trace plots}
 \label{Radon-trace-plots}
 
+Here we present the Radon transform trace profiles of the stellar velocity fields of CPSB sample and their control galaxies. 
+
+\subsection{CPSBs}
+
+The Radon transform trace profiles of the CPSBs are presented in Figures \ref{fig:Radon-traces-CPSBs-1} and \ref{fig:Radon-traces-CPSBs-2}. There is no significance in the split of CPSB Radon trace profiles between the figures, just to display these clearly on the page.
+
 \begin{figure*}
     \centering
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/7964-1902.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8080-3702.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8081-3702.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8082-3704.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8143-3703.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8313-6101.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8315-3703.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8331-6104.png}
-     \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8555-3701.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8623-9102.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8655-1902.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8713-3701.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8725-1902.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8933-3704.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8934-9101.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8935-12701.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8938-6102.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8941-3701.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8944-1902.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8950-3704.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8979-1902.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8996-3704.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/8997-3704.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/9047-3701.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/9085-1902.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/9493-12705.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/9494-3701.png}
-    \includegraphics[width=0.19\textwidth]{Images/trace-plots/trace-plots-cpsbs/9494-3703.png}
-    \caption{Radon transform trace profiles of the stellar velocity fields of CPSBs with MaNGA plateifu designations as follows. Top row: 7964-1902, 8080-3702, 8081-3702, 8082-3704, 8143-3703; second row: 8313-6101, 8315-3703, 8331-6104, 8555-3701, 8623-9102; third row: 8655-1902, 8713-3701, 8725-1902, 8933-3704, 8934-9101; fourth row: 8935-12701, 8938-6102, 8941-3701, 8944-1902, 8950-3704; fifth row: 8979-1902, 8996-3704, 8997-3704, 9047-3701, 9085-1902; bottom row: 9493-12705, 9494-3701, 9494-3703.}
-    \label{fig:Radon-traces-CPSBs}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/7964-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8080-3702.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8081-3702.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8082-3704.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8143-3703.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8313-6101.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8315-3703.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8331-6104.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8555-3701.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8623-9102.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8655-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8713-3701.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8725-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8933-3704.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8934-9101.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8935-12701.png}
+    %
+    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 1 of 2). The MaNGA plateifu identifiers are as follows, top row: 7964-1902, 8080-3702, 8081-3702, 8082-3704; second row: 8143-3703, 8313-6101, 8315-3703, 8331-6104; third row: 8555-3701, 8623-9102, 8655-1902, 8713-3701; bottom row: 8725-1902, 8933-3704, 8934-9101, 8935-12701.}
+    \label{fig:Radon-traces-CPSBs-1}
 \end{figure*}
 
+\begin{figure*}
+    \centering
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8938-6102.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8941-3701.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8944-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8950-3704.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8979-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8996-3704.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8997-3704.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/9047-3701.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/9085-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/9493-12705.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/9494-3701.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/9494-3703.png}
+    %
+    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (aet 2 of 2). The MaNGA plateifu identifiers are as follows, top row: 8938-6102, 8941-3701, 8944-1902, 8950-3704; second row: 8979-1902, 8996-3704, 8997-3704, 9047-3701; bottom row: 9085-1902, 9493-12705, 9494-3701, 9494-3703.}
+    \label{fig:Radon-traces-CPSBs-2}
+\end{figure*}
+
+\subsection{CPSB controls}
+Radon transform profiles for the first CPSB control sample group of are displayed in Figures \ref{fig:Radon-traces-CPSB-controls-1} and \ref{fig:Radon-traces-CPSB-controls-2}. There is no significance in the split of CPSB Radon trace profiles between the figures, just to display these clearly on the page.
+
+\begin{figure*}
+    \centering
+    %
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8084-6103.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8262-3703.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8262-12701.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8335-12704.png}
+    %
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8442-3704.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8461-9102.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8602-6101.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8623-3702.png}
+    %
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8624-12704.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8625-3703.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8716-12704.png}
+    \includegraphics[width=0.24\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8727-12704.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8932-1901.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8932-6103.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8939-3701.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8940-6101.png}    
+    %
+    \caption{Radon transform trace profiles of thew stellar velocity maps of CPSB control galaxies maps (set 1 of 2). The MaNGA plateifu identifiers are as follows, top row: 8084-6103, 8262-3703, 8262-12701, 8335-12704; second row: 8442-3704, 8461-9102, 8602-6101, 8623-3702; third row: 8624-12704, 8625-3703, 8716-12704, 8727-12704; bottom row: 8932-1901, 8932-6103, 8939-3701, 8940-6101.}
+    \label{fig:Radon-traces-CPSB-controls-1}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8945-12703.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8992-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8995-9101.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9029-6103.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9043-6104.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9048-6101.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9505-12701.png}   
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9509-9101.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9870-12701.png}
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9871-1901.png}    
+    \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/9876-3701.png}
+    %
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies (set 2 of 2). The MaNGA plateifu identifiers are as follows, top row: 8945-12703, 8992-1902, 8995-9101, 9029-6103; second row: 9043-6104, 9048-6101, 9505-12701, 9509-9101; bottom row: 9870-12701, 9871-1901, 9876-3701.}
+    \label{fig:Radon-traces-CPSB-controls-2}
+\end{figure*}
 
 
 \section{Conclusions}
 
-The last numbered section should briefly summarise what has been done, and describe the final conclusions which the authors draw from their work.
+To follow.
 
-\section*{Acknowledgements}
 
-The Acknowledgements section is not numbered. Here you can thank helpful colleagues, acknowledge funding agencies, telescopes and facilities used etc.
-Try to keep it short.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -176,25 +231,16 @@ Try to keep it short.
 \bibliographystyle{mnras}
 \bibliography{JPbib2019} % if your bibtex file is called example.bib
 
-% Alternatively you could enter them by hand, like this:
-% This method is tedious and prone to error if you have lots of references
-\begin{thebibliography}{99}
-\bibitem[\protect\citeauthoryear{Author}{2012}]{Author2012}
-Author A.~N., 2013, Journal of Improbable Astronomy, 1, 1
-\bibitem[\protect\citeauthoryear{Others}{2013}]{Others2013}
-Others S., 2012, Journal of Interesting Stuff, 17, 198
-\end{thebibliography}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
 
-\appendix
+% \appendix
+%
+% \section{Some extra material}
 
-\section{Some extra material}
-
-If you want to present additional material which would interrupt the flow of the main paper,
-it can be placed in an Appendix which appears after the list of references.
+% If you want to present additional material which would interrupt the flow of the main paper,
+% it can be placed in an Appendix which appears after the list of references.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
