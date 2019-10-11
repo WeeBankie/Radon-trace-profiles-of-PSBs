@@ -106,6 +106,20 @@ keyword1 -- keyword2 -- keyword3
 
 \citet{2018MNRAS.480.2217S} utilise the Radon transform of MaNGA-derived velocity field maps to detect asymmetries and disturbances in the velocity fields of galaxies as obtained from the SDSS-IV MaNGA survey. Here we examine the Radon transform trace profiles of a sample of 30 central-type post-starburst (CPSB) galaxies and compare these Radon profile trace plots with those of a corresponding control sample of non-CPSB, or 'normal' galaxies.
 
+\section{Cleaning the data}
+\label{sec:cleaning}
+
+\begin{figure*}
+    \centering
+     \includegraphics[width=0.9\textwidth]{Images/SN+MC_ITER/8938-6102-3-1.png}
+     \includegraphics[width=0.9\textwidth]{Images/SN+MC_ITER/8938-6102-3-5.png}
+    \includegraphics[width=0.9\textwidth]{Images/SN+MC_ITER/8938-6102-3-20.png}
+    \includegraphics[width=0.9\textwidth]{Images/SN+MC_ITER/8938-6102-3-250.png}
+    \caption{Data cleaning: Radon transform (RT) plots of plate-ifu ID 8938-6102 calculated with various numbers of Monte Carlo (MC) iterations in the trace plot calculation. From left to right: MaNGA stellar velocity map, Radon transform (RT) plot and RT profile race. Top row: MC = 1 iteration; Second row: MC = 5 iterations; Third row: MC = 20 iterations; Bottom row: MC = 250 iterations.}
+    \label{fig:my_label}
+\end{figure*}
+
+
 \subsection{Radon trace profiles of CPSBs}
 \label{sec:Radon_trace_profiles}
 
@@ -133,7 +147,7 @@ The Radon transform trace profiles of the CPSB sample are presented in Figures \
     \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8934-9101.png}
     \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/8935-12701.png}
     %
-    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 1 of 2). The MaNGA plateifu identifiers are as follows, top row: 7964-1902, 8080-3702, 8081-3702, 8082-3704; second row: 8143-3703, 8313-6101, 8315-3703, 8331-6104; third row: 8555-3701, 8623-9102, 8655-1902, 8713-3701; bottom row: 8725-1902, 8933-3704, 8934-9101, 8935-12701.}
+    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 1 of 2). The trace profiles were calculated using the Radon transform input parameters SNCUT=3 and MC\_ITER=1 (see text for details). The MaNGA plateifu identifiers are as follows, top row: 7964-1902, 8080-3702, 8081-3702, 8082-3704; second row: 8143-3703, 8313-6101, 8315-3703, 8331-6104; third row: 8555-3701, 8623-9102, 8655-1902, 8713-3701; bottom row: 8725-1902, 8933-3704, 8934-9101, 8935-12701.}
     \label{fig:Radon-traces-CPSBs-1}
 \end{figure*}
 
@@ -160,7 +174,7 @@ The Radon transform trace profiles of the CPSB sample are presented in Figures \
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSBs/8934-9101-1-250.png}
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSBs/8935-12701-1-250.png}    
     %
-    \caption{}
+    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 1 of 2). The layout of PLATEIFU identifiers is the same as that presented in Figure \ref{fig:Radon-traces-CPSBs-1}. This layout facilitates an easy visual comparison. The trace profiles were calculated using the Radon transform input parameters SNCUT=1 and MC\_ITER=250.}
     \label{fig:Radon-traces-CPSBs-1-SN1-MC250}
 \end{figure*}
 
