@@ -109,6 +109,11 @@ keyword1 -- keyword2 -- keyword3
 \section{Cleaning the data}
 \label{sec:cleaning}
 
+\subsection{Monte Carlo iterations}
+\label{MC-iter}
+Firstly, we investigate the impact of varying the number of Monte Carlo (MC) iterations in the Radon transform calculation. Figure \ref{fig:MC-iterations} shows the results of increasing number of MC iterations for CPSB 8938-6102 from 1 in the top row, and progressively 5, 20 and 250 iterations in the bottom row. It can be seen that increasing the number of MC iterations reduces the size of the error bars and emphasises geometric features in the trace profile. In each case the signal-to-noise cutoff parameter (see below) is set at the default value of SNCUT = 3.
+
+
 \begin{figure*}
     \centering
      \includegraphics[width=0.9\textwidth]{Images/SN+MC_ITER/8938-6102-3-1.png}
@@ -116,14 +121,19 @@ keyword1 -- keyword2 -- keyword3
     \includegraphics[width=0.9\textwidth]{Images/SN+MC_ITER/8938-6102-3-20.png}
     \includegraphics[width=0.9\textwidth]{Images/SN+MC_ITER/8938-6102-3-250.png}
     \caption{Data cleaning: Radon transform (RT) plots of plate-ifu ID 8938-6102 calculated with various numbers of Monte Carlo (MC) iterations in the trace plot calculation. From left to right: MaNGA stellar velocity map, Radon transform (RT) plot and RT profile race. Top row: MC = 1 iteration; Second row: MC = 5 iterations; Third row: MC = 20 iterations; Bottom row: MC = 250 iterations.}
-    \label{fig:my_label}
+    \label{fig:MC-iterations}
 \end{figure*}
+
+\subsection{Signal-to-noise cut}
+\label{SNcut}
+Next we examine the effect of varying the signal-to-noise cutoff parameter SNCUT.
+
 
 
 \subsection{Radon trace profiles of CPSBs}
 \label{sec:Radon_trace_profiles}
 
-The Radon transform trace profiles of the CPSB sample are presented in Figures \ref{fig:Radon-traces-CPSBs-1} and \ref{fig:Radon-traces-CPSBs-2}. We subdivide the CPSB sample the trace plots across two figures in order to display these clearly on the page. There is no other significance in the split over Figures \ref{fig:Radon-traces-CPSBs-1} and \ref{fig:Radon-traces-CPSBs-2}.
+Radon transform trace profiles of the CPSB sample are presented in Figures \ref{fig:Radon-traces-CPSBs-1} and \ref{fig:Radon-traces-CPSBs-2}. We subdivide the CPSB sample the trace plots across two figures in order to display these clearly on the page. There is no other significance in the split over Figures \ref{fig:Radon-traces-CPSBs-1} and \ref{fig:Radon-traces-CPSBs-2}. The trace profiles for the CPSB galaxies were calculated with the RT parameters SNCUT = 1 and MC\_ITER = 250.
 
 \begin{figure*}
     \centering
@@ -223,10 +233,10 @@ The Radon transform trace profiles of the CPSB sample are presented in Figures \
 \end{figure*}
 
 
-\subsection{CPSB controls}
+\subsection{Radon trace profiles of CPSB controls}
 \label{sec:CPSB_controls}
 
-Radon transform trace profiles for the CPSB control galaxy sample group of are displayed in Figures \ref{fig:Radon-traces-CPSB-controls-1} and \ref{fig:Radon-traces-CPSB-controls-2}. Again, there is no significance in the split of CPSB Radon trace profiles between Figures \ref{fig:Radon-traces-CPSB-controls-1} and \ref{fig:Radon-traces-CPSB-controls-2}, other than to display these clearly on the page.
+Radon transform trace profiles for the CPSB control galaxy sample group of are displayed in Figures \ref{fig:Radon-traces-CPSB-controls-1} and \ref{fig:Radon-traces-CPSB-controls-2}. Again, there is no significance in the split of CPSB Radon trace profiles between Figures \ref{fig:Radon-traces-CPSB-controls-1} and \ref{fig:Radon-traces-CPSB-controls-2}, other than to display these clearly on the page. The trace profiles for the CPSB control galaxies were also calculated with the RT parameters SNCUT = 1 and MC\_ITER = 250.
 
 \begin{figure*}
     \centering
@@ -275,7 +285,7 @@ Radon transform trace profiles for the CPSB control galaxy sample group of are d
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSB-CTRLs/8939-3701-1-250.png}
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSB-CTRLs/8940-6101-1-250.png}
     %
-    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies maps with RT input parameters SNCUT=1 and MC\_ITER=250 (set 1 of 2). The MaNGA plateifu identifiers are as follows, top row: 8084-6103, 8262-3703, 8262-12701, 8335-12704; second row: 8442-3704, 8461-9102, 8602-6101, 8623-3702; third row: 8624-12704, 8625-3703, 8716-12704, 8727-12704; bottom row: 8932-1901, 8932-6103, 8939-3701, 8940-6101.}
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies maps with RT input parameters SNCUT=1 and MC\_ITER=250 (set 1 of 2). The MaNGA plateifu identifiers are labelled above each subplot. THe content and layout is the same as that in \ref{fig:Radon-traces-CPSB-controls-1} for easy comparison.}
     \label{fig:Radon-traces-CPSB-controls-1-SN1-MC250}
 \end{figure*}
 
@@ -317,8 +327,24 @@ Radon transform trace profiles for the CPSB control galaxy sample group of are d
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSB-CTRLs/9871-1901-1-250.png}    
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSB-CTRLs/9876-3701-1-250.png}
     %
-    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies with RT input parameters SNCUT=3 and MC\_ITER=1 (set 2 of 2). The MaNGA plateifu identifiers are as follows, top row: 8945-12703, 8992-1902, 8995-9101, 9029-6103; second row: 9043-6104, 9048-6101, 9505-12701, 9509-9101; bottom row: 9870-12701, 9871-1901, 9876-3701.}
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies maps with RT input parameters SNCUT=1 and MC\_ITER=250 (set 2 of 2). The MaNGA plateifu identifiers are labelled above each subplot. The content and layout is the same as that in \ref{fig:Radon-traces-CPSB-controls-2} for easy comparison.}
     \label{fig:Radon-traces-CPSB-controls-2-SN1-MC250}
+\end{figure*}
+
+
+\section{Velocity maps, RT plots and trace profiles}
+\label{composites}
+Here we present a montage of plots for the CPSB and CPSB control galaxy samples. The stellar velocity map, the Radon transform plot and trace profiles are displayed across a row for each galaxy. All plots were calculated with RT input parameters of SNCUT = 1, MC\_ITER = 250 and aperture scale factor = 1.0 (i.e. $R_{ap}=1.0*B/A*R_{eff}$).
+Figures ... show ... [TODO]
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-7964-1902-1-250.png}
+    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8080-3702-1-250.png}
+    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8081-3702-1-250.png}
+    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8082-3704-1-250.png}    
+    \caption{Radon transform output graphics for CPSBs (set 1 of 6). Displayed on each row, from left to right, are the MaNGA stellar velocity map, the Radon transform RT plot and the RT trace profile. The MaNGA plate-ifu ID is displayed above each subplot.}
+    \label{fig:CPSB-triples-1}
 \end{figure*}
 
 \section{Analysis}
