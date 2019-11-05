@@ -111,7 +111,7 @@ keyword1 -- keyword2 -- keyword3
 
 \subsection{Monte Carlo iterations}
 \label{MC-iter}
-Firstly, we investigate the impact of varying the number of Monte Carlo (MC) iterations in the Radon transform calculation. Figure \ref{fig:MC-iterations} shows the results of increasing number of MC iterations for CPSB 8938-6102 from 1 in the top row, and progressively 5, 20 and 250 iterations in the bottom row. It can be seen that increasing the number of MC iterations reduces the size of the error bars and emphasises geometric features in the trace profile. In each case the signal-to-noise cutoff parameter (see below) is set at the default value of SNCUT = 3.
+Firstly, we investigate the impact of varying the number of Monte Carlo (MC) iterations in the Radon transform calculation. Figure \ref{fig:MC-iterations} shows the results of increasing number of MC iterations for CPSB 8938-6102 from MC\_ITER = 1 in the top row, and progressively 5, 20 and 250 iterations in the bottom row. It can be seen that increasing the number of MC iterations reduces the size of the error bars and emphasises geometric features in the trace profile. In each case the signal-to-noise cutoff parameter (see below) is set at the default value of SNCUT = 3.
 
 
 \begin{figure*}
@@ -206,7 +206,7 @@ Radon transform trace profiles of the CPSB sample are presented in Figures \ref{
     \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/9494-3701.png}
     \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsbs/9494-3703.png}
     %
-    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 2 of 2). The MaNGA plateifu identifiers are as follows, top row: 8938-6102, 8941-3701, 8944-1902, 8950-3704; second row: 8979-1902, 8996-3704, 8997-3704, 9047-3701; bottom row: 9085-1902, 9493-12705, 9494-3701, 9494-3703.}
+    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 2 of 2). The trace profiles were calculated using the Radon transform input parameters SNCUT=3 and MC\_ITER=1.  MaNGA plateifu identifiers are as follows, top row: 8938-6102, 8941-3701, 8944-1902, 8950-3704; second row: 8979-1902, 8996-3704, 8997-3704, 9047-3701; bottom row: 9085-1902, 9493-12705, 9494-3701, 9494-3703.}
     \label{fig:Radon-traces-CPSBs-2}
 \end{figure*}
 
@@ -228,7 +228,7 @@ Radon transform trace profiles of the CPSB sample are presented in Figures \ref{
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSBs/9494-3701-1-250.png}
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSBs/9494-3703-1-250.png}
     %
-    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 2 of 2). The Radon Trace plots were constructed with parameters SNCUT=1 and MC\_ITER=250. The MaNGA plateifu identifiers are as follows, top row: 8938-6102, 8941-3701, 8944-1902, 8950-3704; second row: 8979-1902, 8996-3704, 8997-3704, 9047-3701; bottom row: 9085-1902, 9493-12705, 9494-3701, 9494-3703.}
+    \caption{Radon transform trace profiles of the stellar velocity fields of CPSB galaxies (set 2 of 2). The layout of PLATEIFU identifiers is the same as that presented in Figure \ref{fig:Radon-traces-CPSBs-2}. This layout facilitates an easy visual comparison. The trace profiles were calculated using the Radon transform input parameters SNCUT=1 and MC\_ITER=250.}
     \label{fig:Radon-traces-CPSBs-2-SN1-MC250}
 \end{figure*}
 
@@ -259,7 +259,7 @@ Radon transform trace profiles for the CPSB control galaxy sample group of are d
     \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8939-3701.png}
     \includegraphics[width=0.23\textwidth]{Images/trace-plots/trace-plots-cpsb-controls/8940-6101.png}
     %
-    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies maps with RT input parameters SNCUT=1 and MC\_ITER=250 (set 1 of 2). The MaNGA plateifu identifiers are as follows, top row: 8084-6103, 8262-3703, 8262-12701, 8335-12704; second row: 8442-3704, 8461-9102, 8602-6101, 8623-3702; third row: 8624-12704, 8625-3703, 8716-12704, 8727-12704; bottom row: 8932-1901, 8932-6103, 8939-3701, 8940-6101.}
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies maps with RT input parameters SNCUT = 3 and MC\_ITER = 1 (set 1 of 2). The MaNGA plateifu identifiers are as follows, top row: 8084-6103, 8262-3703, 8262-12701, 8335-12704; second row: 8442-3704, 8461-9102, 8602-6101, 8623-3702; third row: 8624-12704, 8625-3703, 8716-12704, 8727-12704; bottom row: 8932-1901, 8932-6103, 8939-3701, 8940-6101.}
     \label{fig:Radon-traces-CPSB-controls-1}
 \end{figure*}
 
@@ -285,7 +285,7 @@ Radon transform trace profiles for the CPSB control galaxy sample group of are d
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSB-CTRLs/8939-3701-1-250.png}
     \includegraphics[width=0.23\textwidth]{Images/SN1-MC250/CPSB-CTRLs/8940-6101-1-250.png}
     %
-    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies maps with RT input parameters SNCUT=1 and MC\_ITER=250 (set 1 of 2). The MaNGA plateifu identifiers are labelled above each subplot. THe content and layout is the same as that in \ref{fig:Radon-traces-CPSB-controls-1} for easy comparison.}
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control galaxies maps with RT input parameters SNCUT=1 and MC\_ITER=250 (set 1 of 2). The MaNGA plateifu identifiers are labelled above each subplot. The content and layout is the same as that in \ref{fig:Radon-traces-CPSB-controls-1} for easy comparison.}
     \label{fig:Radon-traces-CPSB-controls-1-SN1-MC250}
 \end{figure*}
 
@@ -332,20 +332,237 @@ Radon transform trace profiles for the CPSB control galaxy sample group of are d
 \end{figure*}
 
 
-\section{Velocity maps, RT plots and trace profiles}
+\section{Montage of velocity maps, RT plots and trace profiles}
 \label{composites}
-Here we present a montage of plots for the CPSB and CPSB control galaxy samples. The stellar velocity map, the Radon transform plot and trace profiles are displayed across a row for each galaxy. All plots were calculated with RT input parameters of SNCUT = 1, MC\_ITER = 250 and aperture scale factor = 1.0 (i.e. $R_{ap}=1.0*B/A*R_{eff}$).
-Figures ... show ... [TODO]
+Here we present a montage of plots for the CPSB and CPSB control galaxy samples. The stellar velocity map, the Radon transform plot and trace profiles are displayed across a row for each galaxy. All plots in this figure were calculated with RT input parameters of SNCUT = 1, MC\_ITER = 250 and aperture scale factor AF = 1.0 (i.e. $R_{ap}=1.0*B/A*R_{eff}$).
+
+\subsection{Montage of CPSB RT plots}
+Firstly we show the velocity map, Radon transform plot and Radon trace profile for the CPSB group.
 
 \begin{figure*}
     \centering
-    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-7964-1902-1-250.png}
-    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8080-3702-1-250.png}
-    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8081-3702-1-250.png}
-    \includegraphics[width=0.92\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8082-3704-1-250.png}    
-    \caption{Radon transform output graphics for CPSBs (set 1 of 6). Displayed on each row, from left to right, are the MaNGA stellar velocity map, the Radon transform RT plot and the RT trace profile. The MaNGA plate-ifu ID is displayed above each subplot.}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-7964-1902-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8080-3702-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8081-3702-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8082-3704-1-250.png}    
+    \caption{Radon transform output graphics for CPSBs (set 1 of 7). Displayed on each row, from left to right, are the MaNGA stellar velocity map, the Radon transform RT plot and the RT trace profile. The MaNGA plateifu ID is displayed above each subplot. In each case the Radon transform computations were performed using the RT parameters: SNCUT = 1, MC\_ITER = 250 and Radon aperture factor AF = 1.0, as described in the text. The size of the Radon aperture is indicated by the length of the orange-coloured bar in the top left of the velocity map plots.}
     \label{fig:CPSB-triples-1}
 \end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8143-3703-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8313-6101-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8315-3703-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8331-6104-1-250.png}    
+    \caption{Radon transform output graphics for CPSBs (set 2 of 7). Layout and content as per Figure \ref{fig:CPSB-triples-1}}
+    \label{fig:CPSB-triples-2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8555-3701-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8623-9102-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8655-1902-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8725-1902-1-250.png}    
+    \caption{Radon transform output graphics for CPSBs (set 3 of 7). Layout and content as per Figure \ref{fig:CPSB-triples-1}}
+    \label{fig:CPSB-triples-3}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8713-3701-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8725-1902-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8933-3704-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8934-9101-1-250.png}    
+    \caption{Radon transform output graphics for CPSBs (set 4 of 7). Layout and content as per Figure \ref{fig:CPSB-triples-1}}
+    \label{fig:CPSB-triples-4}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8935-12701-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8938-6102-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8941-3701-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8944-1902-1-250.png}    
+    \caption{Radon transform output graphics for CPSBs (set 5 of 7).Layout and content as per Figure \ref{fig:CPSB-triples-1}}
+    \label{fig:CPSB-triples-5}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8950-3704-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8979-1902-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8996-3704-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-8997-3704-1-250.png}    
+    \caption{Radon transform output graphics for CPSBs (set 6 of 7). Layout and content as per Figure \ref{fig:CPSB-triples-1}}
+    \label{fig:CPSB-triples-6}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-9047-3701-1-250.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-9085-1902-1-250.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-9493-12705-1-250.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-9494-3701-1-250.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-triples/CPSB-9494-3703-1-250.png}  
+    \caption{Radon transform output graphics for CPSBs (set 7 of 7). Layout and content as per Figure \ref{fig:CPSB-triples-1}}
+    \label{fig:CPSB-triples-7}
+\end{figure*}
+
+\subsection{Montage of CPSB control RT plots}
+Here we display the velocity map, Radon transform plot and Radon trace profile for the CPSB control galaxy batches. We have 10 CPSB controls batches with index references 0 to 9. Below we show the RT output graphics plots for the CPSB control galaxy batches 0 and 1.
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8084-6103-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8262-3703-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8262-12701-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8335-12704-1-250.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 0, set 1 of 7). Displayed on each row, from left to right, are the MaNGA stellar velocity map, the Radon transform RT plot and the RT trace profile. The MaNGA plateifu ID is displayed above each subplot. In each case the Radon transform computations were performed using the RT parameters: SNCUT = 1, MC\_ITER = 250 and Radon aperture factor AF = 1.0, as described in the text. The size of the Radon aperture is indicated by the length of the orange-coloured bar in the top left of the velocity map plots.}
+    \label{fig:CPSB-CTRL-0-triples-1}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8442-3704-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8461-9102-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8602-6101-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8624-12704-1-250.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 0, set 2 of 7). Layout and content as per Figure \ref{fig:CPSB-CTRL-0-triples-1}.}
+    \label{fig:CPSB-CTRL-0-triples-2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8625-3703-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8626-3702-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8716-12704-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8932-1901-1-250.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 0, set 3 of 7). Layout and content as per Figure \ref{fig:CPSB-CTRL-0-triples-1}.}
+    \label{fig:CPSB-CTRL-0-triples-3}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8932-6103-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8939-3701-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8940-6101-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8945-12703-1-250.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 0, set 4 of 7). Layout and content as per Figure \ref{fig:CPSB-CTRL-0-triples-1}.}
+    \label{fig:CPSB-CTRL-0-triples-4}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8992-1902-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-8995-9101-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9029-6103-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9043-6104-1-250.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 0, set 5 of 7). Layout and content as per Figure \ref{fig:CPSB-CTRL-0-triples-1}.}
+    \label{fig:CPSB-CTRL-0-triples-5}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9043-6104-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9048-6101-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9505-12701-1-250.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9509-9101.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 0, set 6 of 7). Layout and content as per Figure \ref{fig:CPSB-CTRL-0-triples-1}.}
+    \label{fig:CPSB-CTRL-0-triples-6}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9870-12701-1-250.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9871-1901-1-250.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-triples/CPSB-CTRL-9876-3701-1-250.png}
+    \caption{Radon transform output graphics for CPSB controls (batch 0, set 7 of 7). Layout and content as per Figure \ref{fig:CPSB-CTRL-0-triples-1}.}
+    \label{fig:CPSB-CTRL-0-triples-7}
+\end{figure*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/7958-3704-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/7990-9102-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8131-6104-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8131-12704-1-250-10.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 1 of 8). Displayed on each row, from left to right, are the MaNGA stellar velocity map, the Radon transform RT plot and the RT trace profile. The MaNGA plateifu ID is displayed above each subplot. In each case the Radon transform computations were performed using the RT parameters: SNCUT = 1, MC\_ITER = 250 and Radon aperture factor AF = 1.0, as described in the text. The size of the Radon aperture is indicated by the length of the orange-coloured bar in the top left of the velocity map plots.}
+    \label{fig:CPSB-CTRL-1-triples-1}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8133-3701-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8241-12702-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8252-1902-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8255-3704-1-250-10.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 2 of 8). Layout and content as per Figure \ref{fig:CPSB-CTRL-1-triples-1}.}
+    \label{fig:CPSB-CTRL-1-triples-2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8322-12702-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8456-3703-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8465-1902-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8465-3703-1-250-10.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 3 of 8). Layout and content as per Figure \ref{fig:CPSB-CTRL-1-triples-1}.}
+    \label{fig:CPSB-CTRL-1-triples-3}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8465-9101-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8548-6104-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8550-3701-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8591-6103-1-250-10.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 4 of 8). Layout and content as per Figure \ref{fig:CPSB-CTRL-1-triples-1}.}
+    \label{fig:CPSB-CTRL-1-triples-4}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8601-3704-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8616-3704-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8715-6103-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8940-6101-1-250-10.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 5 of 8). Layout and content as per Figure \ref{fig:CPSB-CTRL-1-triples-1}.}
+    \label{fig:CPSB-CTRL-1-triples-5}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8949-12704-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8990-1901-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/8991-3704-1-250-10.png}
+    \includegraphics[width=0.88\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9002-6103-1-250-10.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 6 of 8). Layout and content as per Figure \ref{fig:CPSB-CTRL-1-triples-1}.}
+    \label{fig:CPSB-CTRL-1-triples-6}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9025-6104-1-250-10.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9182-12703-1-250-10.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9184-1901-1-250-10.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9195-1901-1-250-10.png}
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 7 of 8). Layout and content as per Figure \ref{fig:CPSB-CTRL-1-triples-1}.}
+    \label{fig:CPSB-CTRL-1-triples-7}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9497-12704-1-250-10.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9508-3701-1-250-10.png}
+    \includegraphics[width=0.73\textwidth]{Images/SN1-MC250/CPSB-CTRL-1-triples/9869-12701-1-250-10.png}    
+    \caption{Radon transform output graphics for CPSB controls (batch 1, set 8 of 8). Layout and content as per Figure \ref{fig:CPSB-CTRL-1-triples-1}.}
+    \label{fig:CPSB-CTRL-1-triples-8}
+\end{figure*}
+
 
 \section{Analysis}
 \label{sec:analysis}
