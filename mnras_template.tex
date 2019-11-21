@@ -410,7 +410,7 @@ Firstly we show the velocity map, Radon transform plot and Radon trace profile f
     \label{fig:CPSB-triples-7}
 \end{figure*}
 
-\subsection{Montage of CPSB control RT plots}
+\subsection{Montage of CPSB control galaxy RT plots}
 Here we display the velocity map, Radon transform plot and Radon trace profile for the CPSB control galaxy batches. We have 10 CPSB controls batches with index references 0 to 9. Below we show the RT output graphics plots for the CPSB control galaxy batches 0 and 1.
 
 \begin{figure*}
@@ -564,10 +564,221 @@ Here we display the velocity map, Radon transform plot and Radon trace profile f
 \end{figure*}
 
 
+\subsection{Comparison of binning schema}
+The objective of this subsection is to present a comparison of the RT plots and traces obtained from stellar velocity maps generated in 3 different binning methods: ML6 MPL6 HYB10-GAU-MILESHC maps, MPL8 VOR10-MILESHC-MILESHC maps and MPL8 SPX-MILESHC-MILESHC maps. Four galaxies were selected for this excercise: two having well-defined maps: 7977-12704 \& 8322-1901, and two with widely-binned poor definition maps: 8993-6104 \& 9088-12703. These maps cover a range of IFUs with 19, 61 and 127 fibres.
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/7977-12704-1-1-250-10-HYB10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/7977-12704-1-1-250-10-VOR10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/7977-12704-1-1-250-10-SPX.png}    
+    \caption{Radon transform output graphics for the RPSB control galaxy 7977-12704 processed from stellar velocity maps in various binning schema. From the top: MPL6 HYB10-GAU-MILESHC, middle: MPL8 VOR10-MILESHC-MILESHC, and bottom: MPL8 SPX-MILESHC-MILESHC. In each case the RT was computed using an SNCUT = 1, MC\_ITER = 250 and aperture factor = 1.0 x R$_e$.}
+    \label{fig:bin-test-1}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/8332-1901-1-1-250-10-HYB10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/8322-1901-1-1-250-10-VOR10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/8322-1901-1-1-250-10-SPX.png}    
+    \caption{Radon transform output graphics for RPSB galaxy 8332-1901. The layout is as per Figure \ref{fig:bin-test-1}.}
+    \label{fig:bin-test-2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/8993-6104-1-1-250-10-HYB10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/8993-6104-1-1-250-10-VOR10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/8993-6104-1-1-250--10-SPX.png}    
+    \caption{Radon transform output graphics for the RPSB control galaxy 8993-6104. The layout is as per Figure \ref{fig:bin-test-1}.}
+    \label{fig:bin-test-3}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/9088-12703-1-1-250-HYB10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/9088-12703-1-1-250-10-VOR10.png}
+    \includegraphics[width=0.88\textwidth]{Images/bin-test/9088-12703-1-1-250-10-SPX.png}    
+    \caption{Radon transform output graphics for RPSB control galaxy 9088-12703. The layout is as per Figure \ref{fig:bin-test-1}.}
+    \label{fig:bin-test-4}
+\end{figure*}
+
 \section{Analysis}
 \label{sec:analysis}
 
-To follow.
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-7964-1902-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8080-3702-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8081-3702-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8082-3704-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8143-3703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8144-1902-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8313-6101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8315-3703-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8331-6104-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8555-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8623-9102-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8655-1902-LINFIT-EBARS-MASKED.png}
+    % 
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8713-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8725-1902-LINFIT-EBARS-MASKED.png}
+    %   \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8934-9101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8935-12701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8938-6102-LINFIT-EBARS-MASKED.png}
+%
+    \caption{Radon transform trace profiles of the stellar velocity maps of main sample CPSB galaxy maps with RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-CPSB-LINFITS-1}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8941-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8944-1902-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8950-3704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8979-1902-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8996-3704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8997-3703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-9047-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-9085-1902-LINFIT-EBARS-MASK.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-9493-12705-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-9494-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-9494-3703-LINFIT-EBARS-MASKED.png}
+    \caption{Radon transform trace profiles of the stellar velocity maps of main sample CPSB galaxy maps with RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 2 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope.  Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-CPSB-LINFITS-2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-7958-1901-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8084-6103-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8262-12701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8262-3703-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8335-12704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8442-3704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8461-9102-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8602-6101-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8623-3702-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8624-12704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8624-6103-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8625-3703-LINFIT-EBARS-MASKED.png}
+    % 
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8716-12704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8727-12704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8932-1901-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8932-6103-LINFIT-EBARS-MASKED.png}
+%
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control sample 0 galaxy maps with RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-CC0-LINFITS-1}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8939-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8940-6101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8945-12703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8992-1902-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8995-9101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-9029-6103-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-9043-6104-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-9048-6101-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-9505-12701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-9505-9101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-9876-3701-LINFIT-EBARS-MASKED.png}
+    %
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control sample 0 galaxy maps with RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 2 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-CC0-LINFITS-2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-7958-3704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-7990-9102-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8131-12704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8131-6104-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8133-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8241-12702-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8252-1902-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8255-3704-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8456-3703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8465-1902-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8465-3703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8465-9101-LINFIT-EBARS-MASKED.png}
+    % 
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8548-6104-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8550-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8591-6103-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8601-3704-LINFIT-EBARS-MASKED.png}
+    %
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control sample 1 galaxy maps with RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-CC1-LINFITS-1}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8616-3704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8715-6103-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8940-6101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8990-1901-LINFIT-EBARS-MASKED.png}
+    %
+    %    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8990-1901-LINFIT-EBARS-MASKED.png}  
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9002-6103-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9025-6104-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9182-12703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9184-1901-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9195-1901-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9497-12704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9508-3701-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9869-12701-LINFIT-EBARS-MASKED.png}
+    % 
+    \caption{Radon transform trace profiles of the stellar velocity maps of CPSB control sample 1 galaxy maps with RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 2 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-CC1-LINFITS-2}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8082-3704-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8313-6101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8938-6102-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8944-1902-LINFIT-EBARS-MASKED.png}
+%
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8262-3703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9002-6103-LINFIT-EBARS-MASKED.png}
+%
+    \caption{Radon transform trace profiles of the stellar velocity maps displaying Type-OB profiles. In the top row the consensus (DS \& JP) Type-OB profiles in the main sample CPSBs. The second row shows the consensus (DS \& JP) Type-OB in the control samples. 
+    All traces in this figure were developed using RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-Consensus-TYPE-OB-LINFITS}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8997-3703-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8601-3704-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8623-9102-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8442-3704-LINFIT-EBARS-MASKED.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8940-6101-LINFIT-EBARS-MASKED.png}
+    \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8548-6104-LINFIT-EBARS-MASKED.png}
+    %
+    \caption{Radon transform trace profiles of the stellar velocity maps displaying Type-OB profiles. These are candidate Type-OB profiles. 
+    All traces in this figure were developed using RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-Candidate-TYPE-OB-LINFITS}
+\end{figure*}
+
 
 \section{Conclusions}
 \label{sec:conclusions}
