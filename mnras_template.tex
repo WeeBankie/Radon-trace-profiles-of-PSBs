@@ -751,14 +751,15 @@ The objective of this subsection is to present a comparison of the RT plots and 
     %
     \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8082-3704-LINFIT-EBARS-MASKED.png}
     \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8313-6101-LINFIT-EBARS-MASKED.png}
+    %
     \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8938-6102-LINFIT-EBARS-MASKED.png}
     \includegraphics[width=0.23\textwidth]{Images/LINFITS/CPSB-8944-1902-LINFIT-EBARS-MASKED.png}
-%
+    %
     \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC0-8262-3703-LINFIT-EBARS-MASKED.png}
     \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-9002-6103-LINFIT-EBARS-MASKED.png}
-%
+    %
     \caption{Radon transform trace profiles of the stellar velocity maps displaying Type-OB profiles. In the top row the consensus (DS \& JP) Type-OB profiles in the main sample CPSBs. The second row shows the consensus (DS \& JP) Type-OB in the control samples. 
-    All traces in this figure were developed using RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    All traces in this figure were developed using RT input parameters SNCUT = 1 and MC\_ITER = 250. The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
     \label{fig:Radon-traces-Consensus-TYPE-OB-LINFITS}
 \end{figure*}
 
@@ -775,9 +776,64 @@ The objective of this subsection is to present a comparison of the RT plots and 
     \includegraphics[width=0.23\textwidth]{Images/LINFITS/CC1-8548-6104-LINFIT-EBARS-MASKED.png}
     %
     \caption{Radon transform trace profiles of the stellar velocity maps displaying Type-OB profiles. These are candidate Type-OB profiles. 
-    All traces in this figure were developed using RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    All traces in this figure were developed using RT input parameters SNCUT = 1 and MC\_ITER = 250. The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
     \label{fig:Radon-traces-Candidate-TYPE-OB-LINFITS}
 \end{figure*}
+
+\begin{figure*}
+    \centering
+    %
+    \includegraphics[width=0.33\textwidth]{Images/LINFITS/CPSB-LINFIT-HISTO.png}
+    \includegraphics[width=0.33\textwidth]{Images/LINFITS/CC0-LINFIT-HISTO.png}
+    \includegraphics[width=0.33\textwidth]{Images/LINFITS/CC1-LINFIT-HISTO.png}
+    %
+    \caption{Distribution histograms Radon transform trace profile slope values for the stellar velocity map samples CPSB (left), Control set 0 (centre) and Control set 1 (right).}
+    \label{fig:Radon-traces-LINFIT-slope-distribution-histos}
+\end{figure*}
+
+\section{Weighted Least Squares (WLS) linear fits}
+
+In this section we present plots showing the weighted least squares (WLS) least squares linear fit line to the RT trace plots. The weighting method used is $w = 1/\epsilon^2$ where $w$ represents the weight applied to an error bar, and $\epsilon$ represents the magnitude of the error.
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/7964-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8080-3702.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8081-3702.png}F
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8082-3704.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8143-3703.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8144-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8315-3703.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8331-6104.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8555-3701.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8623-9102.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8655-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8713-3701.png}
+    % 
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8725-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8935-12701.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8938-6102.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8941-3701.png}
+    % 
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8944-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8950-3704.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8979-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8996-3704.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/8997-3703.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/9047-3701.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/9085-1902.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/9493-12705.png}
+    %
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/9494-3701.png}
+    \includegraphics[width=0.23\textwidth]{Images/WLSFITS/CPSB/9494-3703.png}
+%
+    \caption{Radon transform trace profiles of the stellar velocity maps of main sample CPSB galaxy maps with RT input parameters SNCUT = 1 and MC\_ITER = 250 (set 1 of 2). The RT trace profiles have been superimposed with a linear fit of the trace slope. Calculated values of the slope and intercept of the linear fit are displayed in the legend.}
+    \label{fig:Radon-traces-CPSB-LINFITS-1}
+\end{figure*}
+
 
 
 \section{Conclusions}
